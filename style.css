@@ -1,0 +1,123 @@
+
+.wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 2px;
+}
+
+.grid-item {
+    background-color: green;
+    /*width: 30px;*/
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item:hover{
+    background: greenyellow;
+}
+
+.Enter, .LShift {
+    grid-column: span 3;
+}
+
+.Tab, .CapsLock {
+    grid-column: 1 / span 2;
+}
+
+.LCtrl {
+    grid-column: 1 / span 1;
+}
+
+.Space {
+    grid-column: span 5;
+}
+
+.RCtrl, .Backspace, .LAlt {
+    grid-column: span 2;
+}
+
+/*.one::after{*/
+/*content: "1";*/
+/*}*/
+
+/*.two::after{*/
+/*content: "2";*/
+/*}*/
+
+/*.three::after{*/
+/*content: "3";*/
+/*}*/
+/*#canvas {*/
+/*background-color: gray;*/
+/*}*/
+
+/*.canvas {*/
+/*-webkit-box-pack: center;*/
+/*-ms-flex-pack: center;*/
+/*justify-content: center;*/
+/*}*/
+
+/*.toolbox, .colorbox{*/
+/*display: flex;*/
+/*flex-direction: column;*/
+/*-webkit-box-shadow: 5px 10px 5px 0px rgba(0,0,0,0.52);*/
+/*-moz-box-shadow: 5px 10px 5px 0px rgba(0,0,0,0.52);*/
+/*box-shadow: 5px 10px 5px 0px rgba(0,0,0,0.52);*/
+/*margin: 30px;*/
+/*}*/
+
+/*.colors, .tools{*/
+/*display: flex;*/
+/*justify-content: center;*/
+/*align-items: center;*/
+/*}*/
+
+/*button{*/
+/*width: 200px;*/
+/*height: 50px;*/
+/*background: white;*/
+/*margin: 10px 5px;*/
+/*border: none;*/
+/*align-items: center;*/
+/*}*/
+
+/*button:hover{*/
+/*background: grey;*/
+/*}*/
+
+/*.circle{*/
+/*height: 35px;*/
+/*width: 35px;*/
+/*border-radius: 50%;*/
+/*border: 1px solid black;*/
+/*margin-left: 20px;*/
+/*}*/
+
+/*.grey{*/
+/*background: grey;*/
+/*}*/
+
+/*.green{*/
+/*background: green;*/
+/*}*/
+
+/*.red{*/
+/*background: red;*/
+/*}*/
+
+/*.blue{*/
+/*background: blue;*/
+/*}*/
