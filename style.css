@@ -1,0 +1,53 @@
+
+.wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 2px;
+}
+
+.grid-item {
+    background-color: green;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item:hover{
+    background: greenyellow;
+}
+
+.pressed{
+    background: greenyellow;
+}
+
+.Enter, .ShiftLeft {
+    grid-column: span 3;
+}
+
+.Tab, .CapsLock {
+    grid-column: 1 / span 2;
+}
+
+.ControlLeft {
+    grid-column: 1 / span 1;
+}
+
+.Space {
+    grid-column: span 5;
+}
+
+.ControlRight, .Backspace, .AltLeft {
+    grid-column: span 2;
+}
